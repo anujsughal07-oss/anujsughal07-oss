@@ -17,11 +17,6 @@ width="100%">
 ---
 
 # 👨‍💻 About Me
-<img align="right" 
-src="https://github.com/user-attachments/assets/93c8b7dd-2dc0-4bd8-ad4e-1dcca103b061"
-width="180"
-style="border-radius: 50%; border:3px solid #00c2ff; float: right margin-left: 20px;"  
-alt="WhatsApp Image 2026-07-02 at 1 41 00 PM" />
 
 
 
