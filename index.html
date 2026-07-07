@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anuj Kumar | DevOps Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#0f2027);
+background-size:400% 400%;
+animation:bgMove 12s ease infinite;
+overflow-x:hidden;
+color:white;
+}
+
+@keyframes bgMove{
+
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+
+}
+
+header{
+
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+.card{
+
+width:350px;
+height:500px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(10px);
+border-radius:25px;
+box-shadow:0 0 40px cyan;
+text-align:center;
+padding:30px;
+transition:.6s;
+transform-style:preserve-3d;
+animation:float 4s ease-in-out infinite;
+
+}
+
+.card:hover{
+
+transform:rotateY(20deg) rotateX(10deg);
+
+}
+
+@keyframes float{
+
+0%{transform:translateY(0);}
+50%{transform:translateY(-20px);}
+100%{transform:translateY(0);}
+
+}
+
+.profile{
+
+width:170px;
+height:170px;
+border-radius:50%;
+border:5px solid cyan;
+margin:auto;
+overflow:hidden;
+box-shadow:0 0 30px cyan;
+
+}
+
+.profile img{
+
+width:100%;
+height:100%;
+object-fit:cover;
+
+}
+
+h1{
+
+margin-top:20px;
+font-size:35px;
+
+}
+
+h3{
+
+color:#00ffff;
+margin-top:10px;
+
+}
+
+p{
+
+margin-top:20px;
+line-height:28px;
+
+}
+
+.buttons{
+
+margin-top:25px;
+
+}
+
+.buttons a{
+
+text-decoration:none;
+padding:12px 25px;
+margin:10px;
+display:inline-block;
+border-radius:30px;
+background:cyan;
+color:black;
+font-weight:bold;
+transition:.4s;
+
+}
+
+.buttons a:hover{
+
+background:white;
+transform:scale(1.1);
+
+}
+
+section{
+
+padding:80px 10%;
+
+}
+
+.title{
+
+font-size:40px;
+text-align:center;
+margin-bottom:50px;
+color:cyan;
+
+}
+
+.skills{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:30px;
+
+}
+
+.skill{
+
+background:#111;
+padding:30px;
+border-radius:20px;
+text-align:center;
+transition:.5s;
+box-shadow:0 0 20px rgba(0,255,255,.3);
+
+}
+
+.skill:hover{
+
+transform:translateY(-15px) rotateY(15deg);
+box-shadow:0 0 30px cyan;
+
+}
+
+.skill h2{
+
+color:cyan;
+margin-bottom:15px;
+
+}
+
+footer{
+
+text-align:center;
+padding:40px;
+background:#111;
+margin-top:50px;
+
+}
+
+.glow{
+
+position:fixed;
+width:500px;
+height:500px;
+background:cyan;
+filter:blur(180px);
+opacity:.15;
+border-radius:50%;
+top:-150px;
+left:-150px;
+animation:moveGlow 10s infinite alternate;
+
+}
+
+@keyframes moveGlow{
+
+100%{
+
+left:70%;
+top:40%;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="glow"></div>
+
+<header>
+
+<div class="card">
+
+<div class="profile">
+
+<img src="https://avatars.githubusercontent.com/u/9919?v=4">
+
+</div>
+
+<h1>Anuj Kumar</h1>
+
+<h3>DevOps Engineer</h3>
+
+<p>
+
+Cloud Computing<br>
+
+AWS | Linux | Git | Docker | Python | HTML
+
+</p>
+
+<div class="buttons">
+
+<a href="#">GitHub</a>
+
+<a href="#">LinkedIn</a>
+
+</div>
+
+</div>
+
+</header>
+
+<section>
+
+<h1 class="title">About Me</h1>
+
+<p style="text-align:center;font-size:20px;">
+
+Hello! I'm <b>Anuj Kumar</b>.
+
+I am passionate about Cloud Computing, DevOps, Linux, AWS, Git, Docker and Python.
+
+I love building websites and automation projects.
+
+</p>
+
+</section>
+
+<section>
+
+<h1 class="title">My Skills</h1>
+
+<div class="skills">
+
+<div class="skill">
+
+<h2>☁ AWS</h2>
+
+<p>EC2, S3, IAM, VPC</p>
+
+</div>
+
+<div class="skill">
+
+<h2>🐧 Linux</h2>
+
+<p>Ubuntu, Commands, Shell</p>
+
+</div>
+
+<div class="skill">
+
+<h2>🐳 Docker</h2>
+
+<p>Containers & Images</p>
+
+</div>
+
+<div class="skill">
+
+<h2>🌐 HTML</h2>
+
+<p>Responsive Websites</p>
+
+</div>
+
+<div class="skill">
+
+<h2>🐍 Python</h2>
+
+<p>Automation Scripts</p>
+
+</div>
+
+<div class="skill">
+
+<h2>🔧 Git</h2>
+
+<p>GitHub & Version Control</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>Connect With Me</h2>
+
+<br>
+
+📧 Email : your@email.com
+
+<br><br>
+
+© 2026 Anuj Kumar
+
+</footer>
+
+</body>
+</html>
